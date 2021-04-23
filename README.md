@@ -1,6 +1,7 @@
 # egov_test
 egov_test 버전 
 
+## 1) CRUD
 
 ### 1. 정적인 페이지는 생성 되지만, 데이터베이스 값은 가져와 지지않음
 dispathcher-servelet, context-mapper
@@ -33,5 +34,8 @@ var board_id='<c:out value="${board_id}"/>';
 ### 8. 정리
 1) context-datasource : 디비 name , pw
 2) context-mapper: mapper위치
-3) context-common: context:component-scan 위치
-4) WEB-INF/config~/springmvc/dispatcher-servlet.xml: p:prefix="/WEB-INF/jsp/" p:suffix=".jsp"/> 위치 지정
+
+
+## 1) JSON 파싱
+여러 개의 폼에 데이터를 한꺼번에 json형식으로 넣어 컨트롤러에서 파싱하려함,
+1) 한 개의 폼에서 오브젝트 형식을 변경하여 VO Class로 받기 완료
